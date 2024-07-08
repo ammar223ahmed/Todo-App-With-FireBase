@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBase Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="auth_container">
+        <center>
+        <div class="main_container_one" id="signup_section">
+            <div class="parent_container">
+                <div>
+                    <h3 style="text-align: center;" class="top-heading">SIGN UP</h3>
+                    
+                    <div class="email-pass-parent">
+                       <input type="email" placeholder="Enter Your Email" id="signUp_email">
+                       <br>
+                       <input type="password" placeholder="Enter Your password" id="signUp_password">
+                        <br>
+                        <input type="file" id="profile_img"/>
+                    </div>
+                   
+                    <br>
+                    <center>
+                    <button id="signUp_button"
+                    class="signup-btn">Sign Up</button>
+                    <p class="para">Dont have an acount? <span class="Sign_inClick">Sign in</span></p>
+                    </center>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="main_container_one" id="signin_section">
+            <div class="parent_container">
+                <h3  class="top-heading" style="text-align: center;">SIGN IN</h3>
+                <div class="email-pass-parent">
+                   <input type="email" placeholder="Enter Your Email" id="signIn_email">
+                   <br>
+                   <input type="password" placeholder="Enter Your password" id="signIn_password">
+                </div>
+                <br>
+                <center>
+                <button id="signIn_button" class="signup-btn">Sign In</button>
+                <p class="para">Dont have an acount? <span class="Sign_upClick">Sign up</span></p>
+                </center>
+
+            </div>
+        </div>
+    </center>
+ <!-- <div>
+<h3 style="text-align: center;">Create Account</h3>
+<div style="display: flex; justify-content: center;">
+   <input type="email" placeholder="Enter Your Email" id="signUp_email">
+   <input type="password" placeholder="Enter Your password" id="signUp_password">
+</div>
+<br>
+<center>
+<button id="signUp_button">Create Account</button>
+</center>
+</div>  -->
+ <!-- <div> 
+    <h3 style="text-align: center;">Sign in to your Account</h3>
+    <div style="display: flex; justify-content: center;">
+       <input type="email" placeholder="Enter Your Email" id="signIn_email">
+       <input type="password" placeholder="Enter Your password" id="signIn_password">
+    </div>
+    <br>
+    <center>
+    <button id="signIn_button">Sign In</button>
+    </center>
+</div>  -->
+</div>
+
+   <div id="user_container" class="useres_container">
+       <br><br><br><br><br> 
+    <div class="userInterface">
+        
+        <div class="my_Name_Date">
+            <h1>Made By Ammar Ahmed !</h1>
+            <p>Date: 5/7/2024</p>
+        </div>
+        <div class="user_child_one">
+            <div class="navbar_top">
+                <h1 id="user_email"></h1>
+        <h1 class="heading_user_child_top">WELCOME TO TODO APP</h1>
+                <button id="logout_btn">Logout</button>
+            </div>
+            <div class="profileiMG">
+                <img src="images/b581bfac5a9a79fb06947f3b22dee67d.jpg" alt="">
+               </div>
+            <!-- <h1>Firestore Database</h1> -->
+            <br><br>
+            <div class="input">
+                <input placeholder="Add Todo Task" id="todo_input" />
+                <button id="add_todo">ADD TODO</button>
+            </div>
+            <h1 class="heading_user_child">MY TODOS</h1>
+    
+    <center>
+    <ul id="todo_list">
+    
+        </ul>
+    </center>
+        <!-- <button id="logout_btn">Logout</button> -->
+      </div>
+    
+
+    </div>
+   </div>
+<script src="app.js" type="module"></script>
+</body>
+</html>
